@@ -1,0 +1,23 @@
+.search {
+  display: flex;
+  gap: 10px;
+  background: white;
+  padding: 10px;
+  border-radius: 30px;
+  margin: 30px auto;
+  max-width: 700px;
+}
+
+.search input {
+  flex: 1;
+  border: none;
+  outline: none;
+}
+
+.search button {
+  background: #ff7a59;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+}

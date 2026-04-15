@@ -1,0 +1,12 @@
+.features {
+  display: flex;
+  gap: 20px;
+  padding: 30px 20px;
+}
+
+.feature {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  flex: 1;
+}
