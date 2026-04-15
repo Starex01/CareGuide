@@ -1,3 +1,5 @@
+import { useNavigate } from "react-router-dom"; // Import the navigation hook
+
 const conditions = [
   { name: "Malaria", emoji: "🦟" },
   { name: "Typhoid Fever", emoji: "🤒" },
@@ -8,6 +10,8 @@ const conditions = [
 ];
 
 export default function Conditions() {
+  const navigate = useNavigate(); // Initialize the navigate function
+
   return (
     <section className="py-12">
       <h3 className="text-xl font-semibold text-gray-800 mb-6 flex items-center gap-2">
@@ -18,7 +22,9 @@ export default function Conditions() {
         {conditions.map((c) => (
           <button
             key={c.name}
-            className="bg-white rounded-2xl p-5 flex items-center gap-4 shadow-sm hover:shadow-md transition"
+            // Add the onClick handler to navigate to the specific URL
+            onClick={() => navigate(`/condition/${c.name.toLowerCase().replace(/\s+/g, "-")}`)}
+            className="bg-white rounded-2xl p-5 flex items-center gap-4 shadow-sm hover:shadow-md transition cursor-pointer text-left"
           >
             <span className="text-2xl">{c.emoji}</span>
             <span className="text-sm font-medium text-gray-800">

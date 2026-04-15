@@ -2,7 +2,7 @@
 
 export default function Footer() {
   return (
-    <footer className="border-t py-6 text-sm text-center mt-24 pb-10 text-blue-700"
+    <footer className=" py-6 text-sm text-center mt-24 pb-10 text-blue-700"
         style={{ borderColor: "hsl(var(--border))", color: "hsl(var(--muted-foreground))" }}
       >
         <p>

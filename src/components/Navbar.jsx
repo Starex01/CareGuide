@@ -1,3 +1,5 @@
+import { Navigate } from "react-router-dom";
+
 export default function Navbar() {
   return (
     <nav className="flex justify-between items-center py-6">
