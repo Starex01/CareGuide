@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom"; // Import these
 import Navbar from "./components/Navbar";
+import About from "./components/About"; // Import the new About component
 import Hero from "./components/Hero";
 import SearchBar from "./components/SearchBar";
 import Conditions from "./components/Conditions";
@@ -14,6 +15,7 @@ export default function App() {
       
       {/* The Routes container manages which component displays */}
       <Routes>
+        {<Route path="/about" element={<About />} />}
         {/* Home Page Route: Displays all your main components */}
         <Route 
           path="/" 
